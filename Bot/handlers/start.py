@@ -13,3 +13,5 @@ def start(update: Update, context: CallbackContext):
         f"📁 {BTN_CATEGORIES} bo'limidan musiqalarni eshitasiz.",
         reply_markup=kb,
     )
+
+()

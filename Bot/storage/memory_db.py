@@ -94,3 +94,5 @@ def remove_music_by_index(
 
     items.pop(index)
     return True
+
+()

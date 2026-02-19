@@ -64,3 +64,4 @@ def cancel(update, context):
     context.user_data.clear()
     update.message.reply_text("Bekor qilindi.", reply_markup=ReplyKeyboardRemove())
     return ConversationHandler.END
+()
