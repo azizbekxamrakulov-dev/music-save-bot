@@ -20,6 +20,7 @@ def show_categories(update: Update, context: CallbackContext):
 def open_category(update: Update, context: CallbackContext):
     text = (update.message.text or "").strip()
 
+
     if text == "⬅️ Orqaga":
         kb = ReplyKeyboardMarkup(
             keyboard=[[KeyboardButton(BTN_CATEGORIES)]], resize_keyboard=True
@@ -40,3 +41,4 @@ def open_category(update: Update, context: CallbackContext):
     update.message.reply_text(f"🎧 {text} musiqalari:")
     for it in items:
         update.message.reply_audio(audio=it["file_id"], caption=it.get("title", ""))
+()
